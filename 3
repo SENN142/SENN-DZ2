@@ -1,0 +1,14 @@
+java
+public class Power {
+    public static double power(double a, int n) {
+        double result = 1.0;
+        boolean negative = n < 0;
+        n = Math.abs(n);
+        
+        for (int i = 0; i < n; i++) {
+            result *= a;
+        }
+        
+        return negative ? 1.0 / result : result;
+    }
+}
