@@ -1,0 +1,12 @@
+java
+public class PowerRecursive {
+    public static double power(double a, int n) {
+        if (n == 0) {
+            return 1.0;
+        }
+        if (n < 0) {
+            return 1.0 / power(a, -n);
+        }
+        return a * power(a, n - 1);
+    }
+}
